@@ -35,7 +35,7 @@
 ![view](/sm-screen.png)
 
 ### Demo
-[![](https://img.shields.io/badge/Demo-visit-green)](https://project-2-shopify.netlify.app/)
+[![](https://img.shields.io/badge/Demo-visit-green)](https://project-3-rode-clone.netlify.app/)
 
 ### Autor
 <a href="https://github.com/MrBhuyan06"> <img src="https://github.com/github-user-name.png" alt="github-user-name" style="width:50px;"/></a>
