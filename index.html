@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rode-clone</title>
+    <!-- external css link -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!-- Tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                screens: {
+                    'sm': '576px',
+
+                    'md': '768px',
+
+                    'lg': '992px',
+
+                    'xl': '1200px',
+                },
+                fontFamily: {
+                    'inter': ['Inter', 'sans-serif'],
+                },
+                extend: {
+                    colors: {
+                        mygold: '#ad9970',
+                    },
+                }
+            }
+        }
+    </script>
+    
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+            rel="stylesheet">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<body class="font-[inter]">
+    <!-- nav section -->
+    <nav>
+        <!-- container -->
+        <div class="xl:border-b">
+            <div class="above flex items-center max-w-[1140px] px-3.5 xl:py-1 py-2 justify-between mx-auto  relative">
+                <div class="flex items-center space-x-1.5 text-gray-500 font-light">
+                    <a class="xl:hidden mr-4 " href="#">
+                        <i class="fa-solid fa-bars font-gray-900"></i>
+                    </a>
+                    <a href="#">
+                        <img class="w-3" src="./Assests/Location.svg" alt="">
+                    </a>
+                    <a href="#">
+                        <h4 class="text-lg xl:text-xs ">EN</h4>
+                    </a>
+                    <a class="mb-1.5" href="#">
+                        <i class="fa-solid fa-sort-down text-md xl:text-sm "></i>
+                    </a>
+                </div>
+                <div>
+                    <a class="xl:hidden" href="#">
+                        <img class="w-20" src="./Assests/BrandLogo.svg" alt="">
+                    </a>
+                </div>
+                <div class="flex items-center  gap-2">
+                    <a class="xl:flex hidden" href="#">
+                        <img class="w-4" src="./Assests/User.svg" alt="">
+                    </a>
+                    <a class="xl:hidden" href="#">
+                        <img class="w-6" src="./Assests/search.svg" alt="">
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+        <!-- nav2 -->
+        <div class="max-w-[1140px] max-auto px-3 py-6 mx-auto hidden xl:flex justify-between items-center  ">
+            <div>
+                <a href="#"><img class="w-20" src="./Assests/BrandLogo.svg" alt=""></a>
+            </div>
+            <div class="flex items-center justify-between space-x-4 text-black font-normal ">
+                <ul class="flex items-center justify-between space-x-8  text-black font-light">
+                    <li><a href="#">PRODUCTS</a></li>
+                    <li><a href="#">USER GUIDES</a></li>
+                    <li><a href="#">SOLUTION</a></li>
+                    <li><a href="#">APPAREL</a></li>
+                    <li><a href="#">SUPPORT</a></li>
+                    
+                </ul>
+            </div>
+            <div>
+                <a href="#">
+                    <img src="./Assests/search.svg" alt="">
+                </a>
+            </div>
+        </div>
+
+    </nav>
+    <!-- nav end -->
+    <!-- main start -->
+    <main>
+        <!-- hero setion one -->
+        <section class="hero-banner-1">
+            <div class="hero-1-img flex flex-col items-center lg:items-end justify-center bg-black">
+                <div class="lg:hidden mobile-hero-0 ">
+                    <img src="./Assests/hero/hero-1-mobile.jpg" alt="">
+
+                </div>
+                <div class="max-w-lg w-full xl:mr-40 py-10  ">
+                     <div class="mx-[]">
+                        <img class="" src="./Assests/hero/hero-logo.svg" alt="">
+                        <h1 class="my-5 text-2xl font-medium text-white text-center">The Revolution Is here</h1>
+                        <p class="text-gray-400 text-left md:text-center lg:text-left xl:text-center text-white">The RØDECaster
+                            Pro
+                            II is the world's most powerful all-in-one audio
+                            solution for streamers,
+                            podcasters, musicians, and creators. Take your content to the next level</p>
+                        <div class="text-mygold mt-10 text-center space-x-5">
+                            <a href="#">
+                                LEARN MORE 
+                                <i class="fa-solid fa-angle-right ml-1"></i>
+                            </a>
+                            
+                        
+                            <a class="bg-mygold text-white px-6 py-2 rounded-full hover:text-mygold hover:bg-white ease-in font-semibold duration-300" href="#">Buy Now</a>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section 1 end -->
+        <!-- section 2 -->
+        <section class=" hero-banner-2">
+            <div class="hero-2-img flex flex-col items-center lg:items-start justify-center bg-[#CACACA]">
+                <div class="max-w-lg w-full  xl:ml-40  ">
+                    <div class="py-3">
+                       <img class="" src="./Assests/hero/hero-logo-2.svg" alt="">
+                       <h1 class="my-5 text-2xl font-medium text-black text-center">Your Search For The Perfect Headphones Is Over </h1>
+                       <p class="text-gray-400 text-left md:text-center lg:text-left xl:text-center text-white">Experience sound like never before with the NTH-100s. Exceptional sonic performance, superior comfort and iconic looks that inspires creativity</p>
+                       <div class="text-mygold mt-10 text-center space-x-5">
+                           <a href="#">
+                               LEARN MORE 
+                               <i class="fa-solid fa-angle-right ml-1"></i>
+                           </a>
+                           
+                       
+                           <a class="bg-mygold text-white px-6 py-2 rounded-full hover:text-mygold hover:bg-white ease-in font-semibold duration-300" href="#">Buy Now</a>
+                       </div>
+                    </div>
+               
+            </div>
+
+        </section>
+        <!-- section 2end -->
+        <!-- Section 3 start -->
+        <section class="hero-banner-3">
+            <div class="hero-3-img flex flex-col items-center lg:items-end justify-center bg-white">
+                <div class="lg:hidden mobile-hero-3">
+                    <img src="./Assests/hero/hero-3-mobile.jpg" alt="">
+                 
+                </div>
+                <div class="max-w-lg w-full xl:mr-40 py-10  ">
+                    <div class="mx-[]">
+                       <img class="" src="./Assests/hero/hero-logo-3.svg" alt="">
+            
+                       <h1 class="my-5 text-2xl font-medium text-black text-center">Studio-Quality Recording, Made Simple</h1>
+                       <p class="text-gray-400 text-left md:text-center lg:text-left xl:text-center text-black">
+                        The NT-USB is a studio-quality USB condenser microphone that offers impeccable audio, elegant looks and premium features, all in an easy-to-use form factor, the NT-USB will have you sounding like a pro in seconds.
+                       </p>
+                       <div class="text-mygold mt-10 text-center space-x-5">
+                           <a href="#">
+                               LEARN MORE 
+                               <i class="fa-solid fa-angle-right ml-1"></i>
+                           </a>
+                           
+                       
+                           <a class="bg-mygold text-white px-6 py-2 rounded-full hover:text-mygold hover:bg-white ease-in font-semibold duration-300" href="#">Buy Now</a>
+                       </div>
+                    </div>
+              
+            </div>
+        </section>
+        <!-- Section three end -->
+        <!-- Section 4 start -->
+        <section class="hero-banner-4">
+            <div class="hero-4-img flex flex-col-reverse items-center lg:items-start justify-center bg-black">
+                <div class="max-w-lg w-full  xl:ml-40  ">
+                    <div class="py-3">
+                       <img class="  lg:block" src="./Assests/hero/hero-logo-4.svg" alt="">
+                       <!-- <img class="lg:hidden" src="./Assests/hero/hero-4-logo-mobile.svgs" alt=""> -->
+                       <h1 class="my-5 text-2xl font-medium text-white text-center">Your Search For The Perfect Headphones Is Over </h1>
+                       <p class="text-gray-400 text-left md:text-center lg:text-left xl:text-center text-white">Experience sound like never before with the NTH-100s. Exceptional sonic performance, superior comfort and iconic looks that inspires creativity</p>
+                       <div class="text-mygold mt-10 text-center space-x-5">
+                           <a href="#">
+                               LEARN MORE 
+                               <i class="fa-solid fa-angle-right ml-1"></i>
+                           </a>
+                           
+                       
+                           <a class="bg-mygold text-white px-6 py-2 rounded-full hover:text-mygold hover:bg-white ease-in font-semibold duration-300" href="#">Buy Now</a>
+                       </div>
+                    </div>
+               
+                <div class="lg:hidden moile-4">
+                    <img src="./Assests/hero/hero-4-mobile.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <!-- Section 4 end -->
+        <!-- section 5 start -->
+        <section class="hero-banner-5 ">
+            <div class="hero-5-img flex flex-col items-center lg:items-end justify-center bg-white">
+                <div class="lg:hidden">
+                    <img src="./Assests/hero/hero-5-mobile.jpg" alt="">
+                </div>
+                <div class="max-w-lg w-full xl:mr-40 py-10  ">
+                    <div class="mx-[]">
+                       <img class="hidden lg:block" src="./Assests/hero/hero-logo-5.svg" alt="">
+                       <img class="lg:hidden" src="./Assests/hero/hero-5-logo-mobile.svg" alt="">
+            
+                       <h1 class="my-5 text-2xl font-medium text-white text-center">Next Generation Wireless Audio</h1>
+                       <p class="text-gray-400 text-left md:text-center lg:text-left xl:text-center text-black">
+                        The NT-USB is a studio-quality USB condenser microphone that offers impeccable audio, elegant looks and premium features, all in an easy-to-use form factor, the NT-USB will have you sounding like a pro in seconds.
+                       </p>
+                       <div class="text-mygold mt-10 text-center space-x-5">
+                           <a href="#">
+                               LEARN MORE 
+                               <i class="fa-solid fa-angle-right ml-1"></i>
+                           </a>
+                           
+                       
+                           <a class="bg-mygold text-white px-6 py-2 rounded-full hover:text-mygold hover:bg-white ease-in font-semibold duration-300" href="#">Buy Now</a>
+                       </div>
+                    </div>
+              
+            </div>
+        </section>
+        <!-- section 5 end -->
+        <!-- section 6 start -->
+        <section class="hero-banner-6">
+            <div class="hero-6-img flex flex-col items-center lg:items-start justify-center bg-white">
+                <div class="lg:hidden">
+                    <img src="./Assests/hero/hero-6-mobile.jpg" alt="">
+                    
+                </div>
+                <div class="max-w-lg w-full xl:ml-40 py-10  ">
+                    <div class="mx-[]">
+                       <img class="hidden lg:block" src="./Assests/hero/hero-logo-6.svg" alt="">
+                       <img class="lg:hidden" src="./Assests/hero/hero-6-logo-mobile.svg" alt="">
+            
+                       <h1 class="my-5 text-2xl font-medium text-white text-center">Next Generation Wireless Audio</h1>
+                       <p class="text-gray-400 text-left md:text-center lg:text-left xl:text-center text-black">
+                        The NT-USB is a studio-quality USB condenser microphone that offers impeccable audio, elegant looks and premium features, all in an easy-to-use form factor, the NT-USB will have you sounding like a pro in seconds.
+                       </p>
+                       <div class="text-mygold mt-10 text-center space-x-5">
+                           <a href="#">
+                               LEARN MORE 
+                               <i class="fa-solid fa-angle-right ml-1"></i>
+                           </a>
+                           
+                       
+                           <a class="bg-mygold text-white px-6 py-2 rounded-full hover:text-mygold hover:bg-white ease-in font-semibold duration-300" href="#">Buy Now</a>
+                       </div>
+                    </div>
+            </div>
+        </section>
+        <!-- section6 end -->
+
+        <!-- Product start -->
+        <section class="py-10">
+            <div class="max-w-[1140px]   mx-auto">
+                <div class="px-3.5 space-y-6">
+                    <div>
+                        <a href="#">
+                            <h1 class="my-5 text-4xl font-bold text-black text-center">Explore The RØDE Range</h1>
+                        </a>
+
+                    </div>
+                    <div class=" flex flex-row justify-center items-center">
+                        <a  class="absolute top-0 w-full h-full hover:bg-[#484848] opacity-20 transition ease-in delay-100" href="">
+                           <a class="cursor-pointer" href="#" >
+                              <img class="hover:bg-green-900" src="./Assests/products/microphones.png" alt="">
+                            
+                            </a>
+                        </a>
+
+                        <a href="#" class="absolute">
+                            <h1 class="lg:text-7xl lg:text-6xl md:text-5xl text-2xl text-white uppercase font-semibold">
+                                microphones</h1>
+                        </a>
+                    </div>
+                    <div class="relative flex justify-center items-center">
+                        <a href="">
+                            <img src="./Assests/products/interfaces&mixers.jpg" alt="">
+                        </a>
+                        <a href="#" class="absolute">
+                            <h1 class="text-white lg:text-7xl lg:text-6xl md:text-5xl text-2xl text-white uppercase font-semibold">INTERFACE & mIXERS</h1>
+                        </a>
+                    </div>
+                    <div class="relative flex justify-center items-center">
+                        <a href="#">
+                            <img src="./Assests/products/softwares.png" alt="">
+                        </a>
+                        <a href="#" class="absolute">
+                            <h1 class="text-white lg:text-7xl lg:text-6xl md:text-5xl text-2xl text-white uppercase font-semibold">SOFTWARE</h1>
+                        </a>
+                    </div>
+                    <div class="relative flex justify-center items-center">
+                        <a href="#">
+                            <img src="./Assests/products/accessories.png" alt="">
+                        </a>
+                        <a href="#" class="absolute">
+                            <h1 class="text-white lg:text-7xl lg:text-6xl md:text-5xl text-2xl text-white uppercase font-semibold">Accessories</h1>
+                        </a>
+                    </div>
+                    <a class="" href="#"  class="mx-auto block max-w-md">
+                        <h1 class="mt-10 my-5 text-4xl font-bold text-mygold text-center">Explore Latest From The RØDE Blog</h1>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+        <!-- section product end -->
+        <!-- Block Section start -->
+        <section>
+
+            <div class="  flex flex-col items-center justify-between lg:grid md:grid-cols-2 md:grid-rows-2 max-w-[1140px] mx-auto space-x-4">
+                <div class="space-y-10 ">
+                    <h1 class="my-5 text-2xl font-medium text-black text-center"> The Difference Between Large-Diaphragm and Small-Diaphragm Condenser Microphoness</h1>
+                    <img src="./Assests/user guides/guide-1.jpeg" alt="">
+                    <p class="text-gray-400 text-left md:text-center  xl:text-center lg:;text-left text-black">
+                        TWe explore the difference between large- and small-diaphragm condenser microphones, and what each is best used forv
+                    </p>
+                    <div class="flex">
+                       <a class="bg-mygold mx-auto text-center inline-block mx-auto  text-white text center px-6 py-2 rounded-full hover:text-mygold hover:bg-white ease-in font-semibold duration-300" href="#">Buy Now</a>
+                  </div> 
+                </div>
+                <div class="space-y-10 ">
+                    <h1 class="my-5 text-2xl font-medium text-black text-center"> 
+                        The Difference Between Large-Diaphragm and Small-Diaphragm Condenser Microphoness
+                    </h1>
+                    <img src="./Assests/user guides/guide-2.jpg" alt="">
+                    <p class="text-gray-400 text-left md:text-center  xl:text-center lg:;text-left text-black">
+                        TWe explore the difference between large- and small-diaphragm condenser microphones, and what each is best used forv
+                    </p>
+                    <div class="flex">
+                       <a class="bg-mygold mx-auto text-center inline-block mx-auto  text-white text center px-6 py-2 rounded-full hover:text-mygold hover:bg-white ease-in font-semibold duration-300" href="#">Buy Now</a>
+                  </div> 
+                </div>
+                <div class="space-y-10 ">
+                    <h1 class="my-5 text-2xl font-medium text-black text-center"> 
+                        The Difference Between Large-Diaphragm and Small-Diaphragm Condenser Microphoness
+                    </h1>
+                    <img src="./Assests/user guides/guide-3.jpg" alt="">
+                    <p class="text-gray-400 text-left md:text-center  xl:text-center lg:;text-left text-black">
+                        TWe explore the difference between large- and small-diaphragm condenser microphones, and what each is best used forv
+                    </p>
+                    <div class="flex">
+                       <a class="bg-mygold mx-auto text-center inline-block mx-auto  text-white text center px-6 py-2 rounded-full hover:text-mygold hover:bg-white ease-in font-semibold duration-300" href="#">Buy Now</a>
+                  </div> 
+                </div>
+                <div class="space-y-10 ">
+                    <h1 class="my-5 text-2xl font-medium text-black text-center"> 
+                        The Difference Between Large-Diaphragm and Small-Diaphragm Condenser Microphoness
+                    </h1>
+                    <img src="./Assests/user guides/guide-4.jpg" alt="">
+                    <p class="text-gray-400 text-left md:text-center  xl:text-center lg:;text-left text-black">
+                        TWe explore the difference between large- and small-diaphragm condenser microphones, and what each is best used forv
+                    </p>
+                    <div class="flex">
+                       <a class="bg-mygold mx-auto text-center inline-block mx-auto  text-white text center px-6 py-2 rounded-full hover:text-mygold hover:bg-white ease-in font-semibold duration-300" href="#">Buy Now</a>
+                  </div> 
+                </div>
+            </div>
+        </section>
+        <!-- <user guidance end> -->
+
+    </main>
+    <footer class="border-t">
+        <div class="lg:flex flex flex-col max-w-[1140px] mx-auto lg:flex-row justify-between items-center lg:items-start  px-3.5 py-6 ">
+            <div class="space-y-2">
+                <img class="w-40" src="./Assests/BrandLogo.svg" alt="">
+                <div class="w-10 h-10 rounded-full bg-mygold mx-auto"></div>
+            </div>
+            
+            <div class="border-t lg:border-none w-full lg:w-auto flex flex-row lg:flex lg:flex-col items-start justify-between  " >
+                <h1 class=" mb-3 text-2xl font-medium text-black "> 
+                Products
+                </h1>
+                <ul class="space-y-1 hidden lg:flex lg:flex-col">
+                    <li><a href="#">Microphoness</a></li>
+                    <li><a href="#">HeadPhone</a></li>
+                    <li><a href="#">Microphoness</a></li>
+                    <li><a href="#">Interfaces and Mixers</a></li>
+                    <li><a href="#">Accessories</a></li>
+                    <li><a href="#">Software</a></li>
+                    <li><a href="#">Appraces</a></li>
+                </ul>
+                <a href="#">
+                    <i class="fa-solid fa-chevron-down lg:hidden"></i>
+                </a>
+            </div>
+            <div class="border-t lg:border-none w-full lg:w-auto flex flex-row lg:flex lg:flex-col items-start justify-between" >
+                <h1 class=" mb-3 text-2xl font-medium text-black "> 
+                Support
+                </h1>
+                <ul class="space-y-1 hidden lg:flex lg:flex-col">
+                    <li><a href="#">Conatct Rode</a></li>
+                    <li><a href="#">Service Center</a></li>
+                    <li><a href="#">Warranty</a></li>
+                    <li><a href="#">where to Buys</a></li>
+                    
+                </ul>
+                <a href="#">
+                    <i class="fa-solid fa-chevron-down lg:hidden"></i>
+                </a>
+            </div>
+            <div class="border-t lg:border-none w-full lg:w-auto flex flex-row lg:flex lg:flex-col items-start justify-between" >
+                <h1 class=" mb-3 text-2xl font-medium text-black "> 
+                Company
+                </h1>
+                <ul class="space-y-1 hidden lg:flex lg:flex-col">
+                    <li><a href="#">Conatct Rode</a></li>
+                    <li><a href="#">Service Center</a></li>
+                    <li><a href="#">Warranty</a></li>
+                   
+                    
+                </ul>
+                <a href="#">
+                    <i class="fa-solid fa-chevron-down lg:hidden"></i>
+                </a>
+                <div class="lg:flex lg:flex-col hidden ">
+                    <h1 class=" mb-3 text-2xl font-medium text-black "> 
+                        Account
+                        </h1>
+                        <ul class="space-y-1 hidden lg:flex lg:flex-col">
+                            <li><a href="#">Maange youR Account</a></li>
+                            <li><a href="#">Create Account</a></li>
+                           
+                            
+                        </ul>
+                </div>
+            </div>
+            <div>
+                <h1 class=" mb-3 text-xl font-medium lg:max-w-[300px] text-right text-black "> 
+                    Subscribe To Our Latest News And Offers
+                    </h1>
+                    <div class="flex">
+                      <a class="bg-mygold  text-center inline-block mx-auto  text-white text center px-6 py-2 rounded-full hover:text-mygold hover:bg-white ease-in font-semibold duration-300" href="#">Sig Up </a>
+                  </div>
+            </div>
+        </div>
+
+        <!-- last copy wrte -->
+        <div class=" max-w-[1120px] mx-auto flex flex-col py-5 px-2 lg:flex lg:flex-row border-t justify-between space-y-5 items-center ">
+            <div>
+                <p class="text-gray-400 text-left md:text-center  xl:text-center lg:;text-left text-black">
+                    © 2022 RØDE All Rights Reserved @Abhishek
+                </p>
+            </div>
+            <div>
+               <a href="#">
+                <p class="text-gray-400 text-left md:text-center  xl:text-center lg:;text-left text-black">
+                    Privacy Policy | Terms & Conditions
+                </p>
+               </a>
+            </div>
+            <div class="space-x-2">
+                <a href="#">
+                    <i class="fa-brands fa-facebook text-beige text-2xl"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-twitter text-beige text-2xl"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram text-beige text-2xl"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-youtube text-beige text-2xl"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-tiktok text-beige text-2xl"></i>
+                </a>
+
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
